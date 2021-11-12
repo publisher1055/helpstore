@@ -6169,10 +6169,10 @@ label.itemTitle:last-child,
 /* ================================================================================
   헤더
 ==================================================================================*/
-.main-header .navbar {
+.skin-blue .main-header .navbar {
   background-color:#60A5FA !important;
 }
-.main-header .logo {
+.skin-blue .main-header .logo {
   background-color:#222D32 !important;
   font-size:16px !important;
 }
