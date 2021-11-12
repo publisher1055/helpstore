@@ -8258,11 +8258,8 @@ style  + .content-wrapper .box .box.box-body {
   }
 
   /* 서브 박스 */
-  .mainbanner + .box > div {
-    /* padding:10px; */
-  }
-  .content-header + .content > .box .box-header {
-    padding:12px;
+  .content-header +.content > .box .box-header {
+    padding: 12px;
   }
 
   /* 서브 타이틀 */
@@ -8324,17 +8321,9 @@ style  + .content-wrapper .box .box.box-body {
     width:100%;
   }
 
-  /* 키워드도구 - 검색어,검색섹션 */
+  /* 키워드도구 - 검색어 검색섹션 */
   #shoppingKeywordSection {
-    padding-bottom:12px;
-    /* margin-top:8px; */
-  }
-  #shoppingKeywordSection + #shoppingKeywordSection {
-    /* margin-top:0; */
-  }
-  #shoppingKeywordSection,
-  #searchSectionSection  {
-    /* padding:12px; */
+    padding-bottom: 12px;
   }
   #searchSectionSection {
     padding:12px;
@@ -8382,10 +8371,7 @@ style  + .content-wrapper .box .box.box-body {
   }
 
   /* 마이 */
-  .content-header + .content > .box { 
-    /* padding:12px; */
-  }
-  #changeForm  label,
+  #changeForm label,
   #changeForm2 label,
   #changeForm3 label {
     display:block;
