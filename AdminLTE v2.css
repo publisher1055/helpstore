@@ -5845,7 +5845,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   justify-content: center;
   min-width: 56px;
   height:40px;
-  padding:3px;
+  padding:3px 12px;
   background-color:#2563EB;
   color:#fff;
   border-color:#2563EB;
@@ -7839,12 +7839,12 @@ footer.main-footer .pull-right a {
 .box-header .box-title #addedCount {
   color:#2563EB;
 }
+/* 분석 결과 */
 #btnExcel {
   background-color:#fff;
   color:#2563EB;
   border-color:#2563EB;
 }
-/* 분석 결과 */
 .table td font[color='red'] {
   color:#EF4444;
 }
@@ -8111,11 +8111,6 @@ footer.main-footer .pull-right a {
 .box > .box-header.pull-right .box-title #btnExcel,
 .box > .box-header.pull-right .box-title #btnRequest {
   min-width:128px;
-  padding: 9px 12px;
-  background-color: #fff;
-  color: #2563EB;
-  border-radius: 6px;
-  border-color: #2563EB;
 }
 .box > .box-header.pull-right .box-title #btnRequest {
   margin-left:9px;
