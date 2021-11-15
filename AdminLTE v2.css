@@ -426,7 +426,6 @@ a:focus {
   font-size: 24px;
 }
 .content-header > h1 > small {
-  max-width:250px;
   display: inline-block;
   padding-left: 4px;
   font-size: 15px;
@@ -5836,6 +5835,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 /* button */
+.btn:hover {
+  box-shadow: none !important;
+}
 .form-group .btn {
   min-width:128px;
   border-color:#2563EB;
@@ -6163,6 +6165,72 @@ label.itemTitle:last-child,
 }
 .box-body.table-responsive {
   border-top:1px solid #EDEDED;
+}
+.box-body.table-responsive + .box-body.table-responsive {
+  border-top:none;
+}
+/* 모달 */
+.modal-header {
+  padding:24px 16px;
+}
+.modal-title {
+  font-size:20px;
+  font-weight:700;
+  color:#4B5563;
+}
+.modal-header .close {
+  font-size:40px;
+  font-weight: 300;
+  opacity: 1;
+}
+.modal-footer {
+  position: relative;
+  min-height:80px;
+  margin-top:0 !important;
+  padding:24px 16px 34px;
+  font-size:13px;
+  color:#4B5563;
+}
+.modal-footer .btn[data-dismiss='modal'] {
+  position:absolute;
+  /* top:calc(50% - 20px); */
+  bottom:16px;
+  right:16px;
+  min-width:96px;
+  height:40px;
+  background-color:#9CA3AF;
+  border-color:#9CA3AF;
+  border-radius:6px;
+  color:#fff;
+  font-size:14px;
+}
+.content > .container {
+  width:auto !important;
+  margin:0 -16px;
+  padding:0;
+}
+.content > .container .btn {
+  min-width:128px;
+  padding:9px 12px;
+  background-color:#2563EB;
+  color:#fff;
+  border-radius:6px;
+  border-color:#2563EB;
+  font-size:14px;
+}
+.content > .container .table .btn,
+.content > .container .table .btn:active {
+  min-width:56px;
+  margin:1px;
+  padding:4px 9px;
+  border:1px solid #2563EB;
+  background-color:transparent !important;
+  color:#2563EB !important;
+  border-radius: 6px;
+  font-weight:500;
+}
+.content > .container .table .btn:hover {
+  box-shadow: none;
 }
 
 
@@ -6591,17 +6659,25 @@ footer.main-footer .pull-right a {
 .content-header + .content > .box .box-header {
   padding:24px;
 }
-.box-header .box-title {
-	font-size:16px;
-	color:#4B5563;
-	font-weight:700;
-	line-height:24px;
-}
 .box-header.with-border {
 	border:none;
 }
-.box-body.table-responsive {
-  padding:0;
+.box-header .box-title {
+  display:block;
+  padding-right:140px;
+	font-size:16px;
+	color:#4B5563;
+	/* font-weight:700; */
+	line-height:24px;
+}
+.box-header .box-title > a {
+  font-size:24px;
+  color:#2563EB;
+  font-weight: 500;
+}
+.box-title[style='font-size:13px;'] {
+  font-size:16px !important;
+  font-weight: 500;
 }
 .box-header .box-title .btnCopy {
 	margin-left:12px;
@@ -6634,13 +6710,26 @@ footer.main-footer .pull-right a {
   color:#fff;
   border-radius:6px;
   border-color:#2563EB;
+  font-size:14px;
 }
 .box-tools .btn + .btn,
 .box-header > .box-title + .pull-right .btn + .btn,
 .box-header > .box-title + span .btn + .btn {
   margin-left:12px;
 }
-
+.box-body.table-responsive {
+  padding:0;
+}
+.box.box-body > .box-header .box-title {
+  /* 광고전략도구 > 광고경쟁 분석 > 분석결과 */
+  display: block;
+  margin-bottom:0 !important;
+  padding-right: 140px;
+  font-size: 16px;
+  color: #4B5563;
+  /* font-weight: 700; */
+  line-height: 24px;
+}
 
 /* ================================================================================
   02 회원가입
@@ -7143,7 +7232,136 @@ footer.main-footer .pull-right a {
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 6%), 0 1px 3px 0 rgb(0 0 0 / 10%);
   color: #4B5563;
 } */
+/* 상세 */
 
+.content > .row .col-xs-12 .box {
+  overflow: hidden;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 6%), 0 1px 3px 0 rgb(0 0 0 / 10%);
+  color: #4B5563;
+}
+.content > .row .col-xs-12 .box .table-responsive:only-child .table th {
+  width:112px;
+  padding:24px 0 24px 24px !important;
+  background-color:#fff;
+  font-size:14px;
+  color:#4B5563;
+  vertical-align: top;
+}
+.content > .row .col-xs-12 .box .table-responsive:only-child .table td {
+  padding:24px 20px;
+  text-align: left;
+  font-size:14px;
+  color:#4B5563;
+}
+.content > .row .col-xs-12 .box .table-responsive:only-child .table td strong {
+  display:block;
+  margin-bottom:12px;
+}
+.content > .row .col-xs-12 .box .table-responsive:only-child .table + .btn {
+  display:inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin:24px;
+  min-width:96px;
+  height:40px;
+  padding:3px;
+  font-size:14px;
+  color:#fff;
+  background-color:#2563EB;
+  border-color:#2563EB;
+  border-radius: 6px;
+}
+.col-xs-12 .box + .col-md-12 {
+  overflow: hidden;
+  margin-top:24px;
+  padding:0 !important;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 6%), 0 1px 3px 0 rgb(0 0 0 / 10%);
+  color: #4B5563;
+}
+.col-md-12 .timeline {
+  margin:0;
+}
+.col-md-12 .timeline::before {
+  display:none;
+}
+.col-md-12 .timeline .timeline-item {
+  margin-left:0;
+  box-shadow: none;
+}
+#commentContentsForm,
+#addCommentContentsForm {
+  height:70px;
+}
+#commentContentsForm textarea,
+#addCommentContentsForm textarea {
+  padding:10px;
+  border:1px solid #D1D5DB;
+  border-radius: 6px;
+}
+#addCommentContentsForm ~ .btn {
+  min-width:72px;
+  height:36px;
+  margin-top:16px;
+}
+#addCommentContentsForm ~ .btn.hideCommentBtn {
+  background-color:#fff;
+  color:#2563EB;
+  margin-left:5px;
+}
+
+.col-md-12 .timeline .timeline-item .timeline-footer {
+  margin-top:16px;
+  padding:0;
+}
+.col-md-12 .timeline .timeline-item .timeline-footer .btn {
+  display:inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width:96px;
+  height:40px;
+  padding:3px;
+  font-size:14px;
+  color:#fff;
+  background-color:#2563EB;
+  border-color:#2563EB;
+  border-radius: 6px;
+}
+#commentArea li {
+  margin-top:0 !important;
+  border-top:1px solid #EDEDED;
+}
+#commentArea li .timeline-item {
+  margin:0 !important;
+}
+#commentArea li .timeline-item .time {
+  padding:0;
+  font-size:14px;
+  color:#9CA3AF;
+}
+#commentArea li .timeline-item .timeline-header {
+  background-color:transparent !important;
+  border-radius:0;
+  font-size:14px;
+  font-weight:700;
+  color:#4B5563;
+}
+#commentArea li .timeline-item .timeline-header  + .timeline-body {
+  margin-top:12px;
+  text-indent: -10px;
+}
+#commentArea li .timeline-item .timeline-footer .showCommentBtn {
+  color:#2563EB;
+  background-color:#fff;
+}
+#commentArea li .timeline-item .timeline-footer .addCommentArea {
+  background-color:#F1F5F9;
+  margin:24px -24px -24px;
+  padding:24px 24px 24px 72px;
+}
 
 /* ================================================================================
   08. 키워드도구 - 싱글
@@ -7590,6 +7808,14 @@ footer.main-footer .pull-right a {
 .box-header .box-title #addedCount {
   color:#2563EB;
 }
+#btnExcel {
+  background-color:#fff;
+  color:#2563EB;
+}
+/* 분석 결과 */
+.table td font[color='red'] {
+  color:#EF4444;
+}
 
 
 /* ================================================================================
@@ -7729,7 +7955,52 @@ footer.main-footer .pull-right a {
   color:#4B5563;
   font-weight: 400;
 }
-
+/* 팝업 */
+.card-body.table-responsive span + span {
+  display:block;
+  padding:16px;
+}
+.card-body.table-responsive .btnExcept.btn-danger,
+.card-body.table-responsive .btnExcept.btn-danger:hover {
+  border-color:#EF4444 !important;
+  color:#EF4444 !important;
+  background-color:#fff !important;
+  font-size:13px;
+}
+.content .container .row {
+  margin:0;
+}
+.content .container .col-12 {
+  padding:16px 16px 0;
+}
+.content .container .col-12 .changeDatePreset {
+  min-width: 58px;
+  height:40px;
+  border:1px solid #D1D5DB;
+  background-color: #fff;
+  font-size:14px;
+  color:#4B5563;
+}
+.content .container .col-12 .changeDatePreset.btn-primary {
+  border:1px solid #2563EB !important;
+  background-color:#DBEAFE !important;
+  color:#2563EB !important;
+}
+.content .container .col-12 .changeDatePreset + .changeDatePreset {
+  margin-left:5px;
+}
+.content .container .col-12 .card {
+  margin:0 -16px;
+}
+.content .container .col-12 .card .card-body {
+  width:100%;
+}
+.content .container .col-12 .card .card-body {
+  margin-top:16px;
+}
+.content .container .col-12 .card .card-body table {
+  margin-top:0 !important;
+}
 
 /* ================================================================================
   14. 순위추적 - 상점명으로 순위추적
@@ -7994,12 +8265,6 @@ footer.main-footer .pull-right a {
 #responseBody {
   padding:24px;
 }
-.box-header .box-title {
-  display:block;
-  padding-right:140px;
-}
-
-
 
 
 /* ================================================================================
@@ -8113,6 +8378,7 @@ footer.main-footer .pull-right a {
 }
 
 .content .box:nth-child(2) .box-header .box-title {
+  display:inline-block;
   margin-bottom:13px;
 }
 .content .box:nth-child(2) .box-header .box-title font {
