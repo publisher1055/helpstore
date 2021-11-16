@@ -6085,12 +6085,14 @@ label.itemTitle:last-child,
   font-size:13px !important;
 }
 .table > tbody > tr > td a {
-  /* color:#2563EB; */
-  color:#4B5563;
+  color:#2563EB;
   font-weight:400;
 }
 .table>tbody+tbody {
   border-top:none;
+}
+.table > tbody > tr > td.subj a {
+  color:#4B5563;
 }
 
 
