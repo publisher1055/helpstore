@@ -5808,8 +5808,8 @@ table.text-center th {
 /* ================================================================================
   초기화
 ==================================================================================*/
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: 'Noto Sans KR', sans-serif;
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .tablesorter-default {
+  font-family: 'Noto Sans KR', sans-serif !important;
 }
 
 /* form */
@@ -5844,38 +5844,51 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   align-items: center;
   justify-content: center;
   min-width: 56px;
+  width: auto !important;
   height:40px;
   padding:3px 12px;
   background-color:#2563EB;
   color:#fff;
-  border-color:#2563EB;
+  border:1px solid #2563EB;
   border-radius: 6px;
   font-size:14px;
   font-weight:500;
+  font-family: 'Noto Sans KR', sans-serif;
 }
-.btn:hover {
+.btn:hover,
+.btn:active,
+.btn:active:hover {
   box-shadow: none !important;
   border-color:#2563EB;
   background-color:#2563EB;
+  color:#fff;
 }
 .form-group.btn {
   margin-bottom:0;
 }
 .form-group .btn {
   min-width:128px;
-  border-color:#2563EB;
   padding:9px 24px;
+  /* border-color:#2563EB;
   border-radius:6px;
   background-color:transparent !important;
   font-size:14px;
   color:#2563EB;
   font-weight:500;
-  text-align:center;
+  text-align:center; */
 }
 .form-group .btn:active {
   border-color:#2563EB;
   color:#2563EB;
   background-color:transparent !important;
+}
+.btn.btn-flat {
+  padding: 0;
+  background-color:transparent;
+  border: none;
+  font-size: 14px;
+  color: #4B5563;
+  font-weight: 500;
 }
 
 /* radio wrap */
@@ -6073,7 +6086,8 @@ label.itemTitle:last-child,
   font-size:13px !important;
 }
 .table > tbody > tr > td a {
-  color:#2563EB;
+  /* color:#2563EB; */
+  color:#4B5563;
   font-weight:400;
 }
 .table>tbody+tbody {
@@ -6088,8 +6102,9 @@ label.itemTitle:last-child,
   height:28px;
   margin:1px;
   padding:3px 12px;
-  background-color:transparent !important;
-  color:#2563EB !important;
+  background-color:#fff;
+  border:1px solid #2563EB;
+  color:#2563EB;
   font-size:13px;
 }
 .table .btn:hover {
@@ -6198,6 +6213,9 @@ label.itemTitle:last-child,
 .modal-header {
   padding:24px 16px;
 }
+.modal-body {
+  padding:0;
+}
 .modal-title {
   font-size:20px;
   font-weight:700;
@@ -6216,18 +6234,22 @@ label.itemTitle:last-child,
   font-size:13px;
   color:#4B5563;
 }
-.modal-footer .btn[data-dismiss='modal'] {
+.modal-footer .btn.pull-left {
+  position:absolute;
+  /* top:calc(50% - 20px); */
+  bottom:16px;
+  left:16px;
+  min-width:96px;
+}
+.modal-footer .btn.pull-right {
   position:absolute;
   /* top:calc(50% - 20px); */
   bottom:16px;
   right:16px;
   min-width:96px;
-  height:40px;
   background-color:#9CA3AF;
   border-color:#9CA3AF;
-  border-radius:6px;
   color:#fff;
-  font-size:14px;
 }
 .content > .container {
   width:auto !important;
@@ -6694,7 +6716,7 @@ footer.main-footer .pull-right a {
 }
 .box-header .box-title {
   display:block;
-  padding-right:140px;
+  /* padding-right:140px; 상세페이지 추출에서 어긋남 */
 	font-size:16px;
 	color:#4B5563;
 	/* font-weight:700; */
@@ -6710,14 +6732,15 @@ footer.main-footer .pull-right a {
   font-size:16px !important;
   font-weight: 500;
 }
-.box-header .box-title .btnCopy {
+.box-header .box-title .btnCopy,
+.box-header .box-title .btnCopy:active,
+.box-header .box-title .btnCopy:active:hover {
+  min-width: 48px;
+  height:24px;
 	margin-left:12px;
-	padding:3px 12px;
-	background-color:#2563EB;
-	border:none;
+  background-color:#2563EB;
+  border-color:#2563EB;
 	font-size:13px;
-	color:#fff;
-	border-radius:6px;
 }
 .box-header > .box-title + .box-tools,
 .box-header > .box-title + .pull-right,
@@ -7082,10 +7105,8 @@ footer.main-footer .pull-right a {
   display:none;
 }
 #searchForm .row .form-group{
-  margin-bottom:0;
-}
-#searchForm .row .form-group {
   width:auto;
+  margin-bottom:0;
 }
 #searchForm div.row:nth-of-type(1) .form-group {
   width:208px;
@@ -7106,6 +7127,12 @@ footer.main-footer .pull-right a {
   background-color:#2563EB !important;
   border-color:#2563EB;
   color:#fff;
+}
+#searchForm div.row:nth-of-type(4) [data-toggle="modal"],
+#searchForm div.row:nth-of-type(5) #btnBulk {
+  color:#2563EB;
+  border-color:#2563EB;
+  background-color:#fff;
 }
 #searchForm div.row:nth-of-type(5) .form-group:first-child {
   margin-top:0 !important;
@@ -7133,7 +7160,7 @@ footer.main-footer .pull-right a {
   margin:0;
   border:none;
 }
-#dataTable thead tr th{
+#dataTable thead tr th {
   padding-left:0 !important;
   padding-right:4px !important;
 }
@@ -7194,6 +7221,9 @@ footer.main-footer .pull-right a {
 }
 #dataTable tbody tr td {
   font-size:14px !important;
+}
+#dataTable tbody tr td a {
+  color:#2563EB;
 }
 .dataarea #dataTable tbody tr td:nth-child(1),
 .dataarea #dataTable tbody tr td:nth-child(2) {
@@ -7401,21 +7431,20 @@ footer.main-footer .pull-right a {
   border-top:1px solid #EDEDED;
 }
 .chart-responsive > span.btn {
+  height:36px;
 	margin-top:8px;
 	margin-right:5px;
-	padding:9px 14px;
-	border:1px solid #2563EB;
 	background-color:#fff;
+  border-color:#2563EB;
 	color:#2563EB;
 	font-size:13px;
 	font-weight:500;
-	border-radius: 6px;
 }
 .chart-responsive > span.btn:active:focus,
 .chart-responsive > span.btn:active:hover {
-	color:#fff;
-	border-color: #fff;
-	background-color:#2563EB;
+	color:#2563EB;
+	background-color:#fff;
+  border-color:#2563EB;
 }
 
 /* 키워드도구 - 인풋 */
@@ -7488,27 +7517,27 @@ footer.main-footer .pull-right a {
 	padding:0;
 }
 #searchSectionSection .col-md-1 .btn-flat {
-	border:none;
+	/* border:none;
 	padding:0;
 	font-size:14px;
 	color:#4B5563;
-	font-weight:500;
+	font-weight:500; */
 }
 #searchSectionSection .col-md-1 .btn-flat:active {
-	box-shadow: none;
+	/* box-shadow: none; */
 }
 #searchSectionSection .col-md-10 {
 	margin-top:-8px;
 	padding:0;
 }
 #searchSectionSection .col-md-10 .btn {
+  height:36px;
 	margin:8px 8px 0 0;
 	padding:7px 16px 8px;
 	font-size:13px;
 	color:#4B5563;
 	border:1px solid #D1D5DB;
 	background-color:#fff;
-	border-radius: 6px;
 }
 #searchSectionSection .col-md-10 .btn:first-child {
 	border-color:#2563EB;
@@ -7681,18 +7710,12 @@ footer.main-footer .pull-right a {
 }
 #chartBox + .tableBox > span:nth-of-type(1) > a {
     min-width: 128px;
-    border-color: #2563EB;
     margin-left:12px;
-    padding: 9px 24px;
-    border-radius: 6px;
-    background-color: transparent !important;
-    font-size: 14px;
-    color: #2563EB;
-    font-weight: 500;
-    text-align: center;
 }
 #chartBox + .tableBox > span:nth-of-type(1) > a:last-child {
   margin-left:0;
+  color:#2563EB;
+  background-color:#fff;
 }
 #chartBox + .tableBox > span:nth-of-type(1) > a:nth-child(1) {
   border-color:#2563EB;
@@ -7823,13 +7846,13 @@ footer.main-footer .pull-right a {
   background-color:#fff !important;
   color:#2563EB;
 }
-#chartBox + .table-responsive>  #dataTable thead tr th {
+#chartBox + .table-responsive > #dataTable thead tr th {
   padding: 3px 2px !important;
   font-size: 13px;
 }
-#chartBox + .table-responsive>  #dataTable thead tr:first-child th:nth-child(3) {border-bottom:none;}
-#chartBox + .table-responsive>  #dataTable thead tr:first-child th:nth-child(8) {border-bottom:none;}
-#chartBox + .table-responsive>  #dataTable thead tr:first-child th:nth-child(9) {border-bottom:none;}
+.box-body > #chartBox + .table-responsive > #dataTable thead tr:first-child th:nth-child(3) {border-bottom:none;}
+.box-body > #chartBox + .table-responsive > #dataTable thead tr:first-child th:nth-child(8) {border-bottom:none;}
+.box-body > #chartBox + .table-responsive > #dataTable thead tr:first-child th:nth-child(9) {border-bottom:none;}
 
 
 /* ================================================================================
@@ -7841,12 +7864,17 @@ footer.main-footer .pull-right a {
 }
 /* 분석 결과 */
 #btnExcel {
+  padding:3px 25px; /* 키워드도구 엑셀 버튼 너비 적용 */
   background-color:#fff;
   color:#2563EB;
   border-color:#2563EB;
 }
 .table td font[color='red'] {
   color:#EF4444;
+}
+.btn.bg-purple {
+  background-color:#fff !important;
+  color:#2563EB !important;
 }
 
 
@@ -8173,9 +8201,8 @@ footer.main-footer .pull-right a {
   margin-bottom:0;
 }
 .callout + .list-group-unbordered li #btnSearch {
-  background-color:#2563EB !important;
-  color:#fff;
-  width:100%;
+  display:flex;
+  width:100% !important;
 }
 
 #inquiryBox {
@@ -8189,6 +8216,7 @@ footer.main-footer .pull-right a {
   padding:0;
 }
 #inquiryBox .btn {
+  height:32px;
   margin:2px;
   padding:6px 12px;
   border-color:#2563EB;
@@ -8197,6 +8225,7 @@ footer.main-footer .pull-right a {
   border-radius:6px;
 }
 #inquiryBox .btnDeleteResult {
+  min-width:32px;
   margin-left:2px !important;
   margin-right:16px !important;
   border-color:#EF4444;
@@ -8387,6 +8416,13 @@ footer.main-footer .pull-right a {
   right:24px;
   bottom:24px;
 }
+#changeForm .pull-right #btnSave, 
+#changeForm2 .pull-right #btnSave2,
+#changeForm3 + .pull-right #btnSave3 {
+  min-width:96px;
+  background-color:#2563EB;
+}
+#changeForm .pull-left .btn,
 #changeForm2 .pull-left .btn {
   border-color:#2563EB;
   color:#2563EB;
@@ -8398,7 +8434,7 @@ footer.main-footer .pull-right a {
   background-color: #fff;
   color: #2563EB;
   border-radius: 6px;
-  border-color: #2563EB;
+  border:1px solid #2563EB;
 }
 #changeForm3 .form-group > label + input {
   display: inline-block;
@@ -8413,20 +8449,22 @@ footer.main-footer .pull-right a {
   border-color: #2563EB;
   font-size:14px;
 }
+.btn-group .btnAgree3:active {
+  background-color: #2563EB;
+}
 .btn-group .btnAgree3:last-child {
   background-color: #fff;
   color: #2563EB;
   border-color: #2563EB;
 }
-
-.content .box:nth-child(2) .box-header .box-title {
+.content .box + .box .box-header .box-title {
   display:inline-block;
   margin-bottom:13px;
 }
-.content .box:nth-child(2) .box-header .box-title font {
+.content .box + .box .box-header .box-title font {
   color:#2563EB;
 }
-.content .box:nth-child(2) .box-header .box-title font + .btn {
+.content .box + .box .box-header .box-title font + .btn {
   margin-left:6px;
   padding: 9px 25px;
   background-color: #2563EB;
