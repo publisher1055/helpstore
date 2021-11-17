@@ -6023,6 +6023,7 @@ label.itemTitle:last-child,
 .form-group .periodBox {
   width:194px;
   color:#1F2937;
+  background:url('https://publisher1055.github.io/helpstore/img/icon-calendar.png') no-repeat 95% center / 15px 15px;
 }
 .form-group  .periodlayer button.active {
   border-color:#2563EB;
@@ -6286,6 +6287,20 @@ label.itemTitle:last-child,
 /* ================================================================================
   헤더
 ==================================================================================*/
+.main-header .logo {
+  padding:0;
+  background:url('https://publisher1055.github.io/helpstore/img/logo2.png') no-repeat 7px 12px !important;
+}
+.main-header .logo .logo-lg {
+  overflow:hidden;
+  position:absolute;
+  width:1px;
+  height:1px;
+  margin:-1px;
+  border:none;
+  clip:rect(1px,1px,1px,1px);
+  clip-path:inset(50%);
+}
 .skin-blue .main-header .navbar {
   background-color:#60A5FA !important;
 }
@@ -6306,6 +6321,33 @@ label.itemTitle:last-child,
 .navbar-nav>li>a i {
   font-size:20px;
 }
+.navbar-nav > .user-menu .dropdown-toggle {
+  height:50px;
+  padding:14px 10px 14px 40px !important;
+  background:url('https://publisher1055.github.io/helpstore/img/icon-no-profile.png') no-repeat 10px center / 21px;
+}
+.navbar-nav > .user-menu .dropdown-toggle:hover,
+.navbar-nav > .user-menu.open .dropdown-toggle {
+  background:rgba(0,0,0,0.1) url('https://publisher1055.github.io/helpstore/img/icon-no-profile.png') no-repeat 10px center / 21px !important;
+}
+.navbar-nav > .user-menu .user-image {
+  display:none;
+}
+.navbar-nav>li>a[data-toggle='control-sidebar'] {
+  height:50px;
+  padding:15px 25px 15px !important;
+  background:url('https://publisher1055.github.io/helpstore/img/icon-setting.png') no-repeat center / 20px;
+}
+.navbar-nav>li>a[data-toggle='control-sidebar']:hover {
+  background:rgba(0,0,0,0.1) url('https://publisher1055.github.io/helpstore/img/icon-setting.png') no-repeat center / 20px !important;
+}
+.navbar-nav>li>a[data-toggle='control-sidebar'] i {
+  display:none;
+}
+.navbar-custom-menu .dropdown-menu .user-footer .btn {
+  color:#fff !important;
+}
+
 
 /* ================================================================================
   사이드바
@@ -6432,7 +6474,7 @@ label.itemTitle:last-child,
 .col-md-8 .box-widget .box-header .user-block .username .text-muted a {
 	font-size:14px;
 }
-.col-md-8 .box-widget .box-header .user-block .username .text-muted .btn-cacao{
+.col-md-8 .box-widget .box-header .user-block .username .text-muted .btn-cacao {
   margin-top:0;
   margin-left:12px;
 	background-color:#2563EB !important;
@@ -6444,6 +6486,16 @@ label.itemTitle:last-child,
 .col-md-8 .box-widget .box-header .user-block .username .text-muted .btn-cacao:nth-child(1) {
   background-color: #DBEAFE !important;
   color:#2563EB !important;
+}
+a.pull-right.btn-cacao:before {
+  width:20px;
+  height:19px;
+  background:url('https://publisher1055.github.io/helpstore/img/icon-kakao02.png') no-repeat left top;
+}
+a.pull-right.btn-cacao + .btn-cacao:before {
+  width:20px;
+  height:19px;
+  background:url('https://publisher1055.github.io/helpstore/img/icon-kakao01.png') no-repeat left top;
 }
 .col-md-8 .box-widget .box-header .user-block .description {
   width:290px;
@@ -6796,6 +6848,11 @@ footer.main-footer .pull-right a {
 }
 .login-logo, .register-logo {
   margin-bottom:32px;
+}
+.login-logo a, .register-logo a {
+  display:block;
+  padding-top:40px;
+  background:url('https://publisher1055.github.io/helpstore/img/member-logo.png') no-repeat center top;
 }
 .login-logo a b, .register-logo a b {
   font-size:32px;
@@ -7482,6 +7539,11 @@ footer.main-footer .pull-right a {
 }
 .box-title + .box-tools.pull-right .btn-box-tool {
   display:none;
+}
+
+#startDate.form-control,
+#endDate.form-control {
+  background:url('https://publisher1055.github.io/helpstore/img/icon-calendar.png') no-repeat 95% center / 15px 15px;
 }
 
 /* 키워드도구 - 카테고리 */
@@ -8620,6 +8682,14 @@ tr[style='cursor:pointer;'] > td[onclick] > a[href] img {
 
 
   /* ================================================================================
+    02 회원가입
+    03 로그인
+  ==================================================================================*/
+  .login-logo a, .register-logo a {
+    background:url('https://publisher1055.github.io/helpstore/img/member-logo-m.png') no-repeat center top / 161px 36px;
+  }
+
+  /* ================================================================================
     06. 아이템소싱 991px
   ==================================================================================*/
   /* 아이템소싱  search */
@@ -8691,6 +8761,16 @@ tr[style='cursor:pointer;'] > td[onclick] > a[href] img {
     margin-top:10px;
   }
 
+  /* ================================================================================
+    헤더 768px
+  ==================================================================================*/
+  .main-header .logo {
+    background:url('https://publisher1055.github.io/helpstore/img/logo2-m.png') no-repeat 7px 6px / 161px 36px !important;
+  }
+  .navbar-nav > .user-menu .dropdown-toggle {
+    padding:15px 25px !important;
+    background-position: center !important;
+  }
 
   /* ================================================================================
     01. 메인 768px
@@ -8713,6 +8793,14 @@ tr[style='cursor:pointer;'] > td[onclick] > a[href] img {
   .attachment-block .attachment-pushed li:last-child p{
     display:block;
   }
+
+  a.pull-right.btn-cacao:before {
+    background:url('https://publisher1055.github.io/helpstore/img/icon-kakao02-m.png') no-repeat left top / 20px 19px;
+  }
+  a.pull-right.btn-cacao + .btn-cacao:before {
+    background:url('https://publisher1055.github.io/helpstore/img/icon-kakao01-m.png') no-repeat left top / 20px 19px;
+  }
+
 
   /* ================================================================================
     서브페이지 공통 768px
