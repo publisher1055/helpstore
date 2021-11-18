@@ -5895,6 +5895,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .tablesorter-default {
   width:32px !important;
   margin-left:0 !important;
   border-left:1px solid #7797DB !important;
+  background-color:#2563EB;
+}
+.open .btn.dropdown-toggle,
+.open .btn.dropdown-toggle:focus,
+.open .btn.dropdown-toggle:hover {
+  border:1px solid #2563EB;
+  border-left:1px solid #7797DB !important;
+  background-color:#2563EB;
 }
 /* radio wrap */
 label.itemTitle{
@@ -6360,6 +6368,7 @@ label.itemTitle:last-child,
 }
 .navbar-custom-menu .dropdown-menu .user-footer .btn {
   color:#fff !important;
+  background-color: #2563EB;
 }
 
 
@@ -6814,6 +6823,7 @@ footer.main-footer .pull-right a {
 .box-header > .box-title + .pull-right,
 .box-header > .box-title + span {
   display:flex;
+  flex-wrap:wrap;
   position: absolute;
   top:calc(50% - 20px);
   right:24px;
@@ -8300,7 +8310,7 @@ footer.main-footer .pull-right a {
   text-align: right;;
 }
 /* .content-header + .content > .box:nth-child(1) .box.box-body.table-responsive.no-padding:nth-child(3) .box-title { */
-  .content-header + .content > .box:nth-child(1) .box.box-body:not(.no-padding):nth-child(2)  + .box.box-body .box-title  {
+.content-header + .content > .box:nth-child(1) .box.box-body:not(.no-padding):nth-child(2)  + .box.box-body .box-title  {
   position: relative;
   display: flex;
   align-items: center;
@@ -8320,7 +8330,7 @@ footer.main-footer .pull-right a {
 }
 .content-header + .content > .box:nth-child(1) .box.box-body.table-responsive.no-padding:nth-child(3) .box-title span + span {
   position:absolute;
-  top:calc(50% - 20px);
+  bottom:calc(50% - 20px);
   right:24px;
 }
 .content-header + .content > .box:nth-child(1) .box.box-body.table-responsive.no-padding:nth-child(3) .box-title span + span .btn {
@@ -8351,6 +8361,15 @@ footer.main-footer .pull-right a {
 .content-header + .content > .box:nth-child(1) .box.box-body.table-responsive.no-padding:nth-child(4)[style] .box-header .box-title + span .btn-group,
 .content-header + .content > .box:nth-child(1) .box.box-body.table-responsive.no-padding:nth-child(4)[style] .box-header .box-title + span #openTagButton {
   margin-left:12px;
+}
+.table table[border='1'] {
+  border-color:#2563EB !important;
+}
+.table table[border='1'] td {
+  padding:10px;
+  text-align:left;
+  font-size:12px !important;
+  vertical-align: top;
 }
 
 /* ================================================================================
@@ -8948,6 +8967,7 @@ tr[style='cursor:pointer;'] > td[onclick] > a[href] img {
     top:0;
     right:0;
     justify-content:flex-end;
+    margin-top:8px;
   }
   .box-tools .btn,
   .box-tools .btn:active,
@@ -8955,12 +8975,17 @@ tr[style='cursor:pointer;'] > td[onclick] > a[href] img {
   .box-header > .box-title + .pull-right .btn:active,
   .box-header > .box-title + span .btn,
   .box-header > .box-title + span .btn:active{
-    margin-top:12px;
+    /* margin-top:12px; */
+    margin-top:4px;
   }
   .box-tools .btn + .btn,
   .box-header > .box-title + .pull-right .btn + .btn,
   .box-header > .box-title + span .btn + .btn {
     margin-left:4px;
+  }
+  .box.box-body > .box-header .box-title {
+    display:block;
+    padding-right:0;
   }
 
 
@@ -8971,7 +8996,9 @@ tr[style='cursor:pointer;'] > td[onclick] > a[href] img {
     padding:10px;
   }
   .box-tools form#searchForm {
-    margin-top:12px;
+    width:100%;
+    /* margin-top:12px; */
+    margin-top:4px;
   }
   .box-tools form#searchForm .input-group {
     width:100% !important;
@@ -9153,6 +9180,37 @@ tr[style='cursor:pointer;'] > td[onclick] > a[href] img {
   #addForm {
     padding:12px;
   }
+
+
+  /* ================================================================================
+    18. 상위노출상품 분석
+  ==================================================================================*/
+  .content-header + .content > .box:nth-child(1) .box.box-body:not(.no-padding):nth-child(2) .box-title {
+    padding:12px;
+  }
+  .content-header + .content > .box:nth-child(1) .box.box-body:not(.no-padding):nth-child(2)  + .box.box-body .box-title {
+    padding:12px;
+  }
+  .content-header + .content > .box:nth-child(1) .box.box-body:not(.no-padding):nth-child(2) + .box.box-body .box-title {
+    margin-bottom:12px;
+    padding-bottom:52px;
+  }
+  .content-header + .content > .box:nth-child(1) .box.box-body.table-responsive.no-padding:nth-child(3) .box-title span + span {
+    right:12px;
+    bottom:0;
+  }
+  #tagSumList {
+    margin-top:-4px;
+    padding:0 12px 12px;
+  }
+  #tagSumList .btn {
+    margin:4px 4px 0 0;
+  }
+  .content-header + .content > .box:nth-child(1) .box.box-body.table-responsive.no-padding:nth-child(4)[style] .box-header .box-title + span .btn-group,
+  .content-header + .content > .box:nth-child(1) .box.box-body.table-responsive.no-padding:nth-child(4)[style] .box-header .box-title + span #openTagButton {
+    margin-left:4px;
+  }
+
 
 
   /* ================================================================================
