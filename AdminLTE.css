@@ -9209,8 +9209,11 @@ tr[style='cursor:pointer;'] > td[onclick] > a[href] img {
   .content-header + .content > .box:nth-of-type(6) {
     padding:12px;
   }
-  .content-header + .content > .box:nth-child(1) > .box-header + .box-body {
+  .content-header + .content > .box:nth-child(1) .box.box-body:last-child {
     padding:0 12px 12px;
+  }
+  .content-header + .content > .box:nth-child(1) > .box-header + .box-body {
+    /* padding:0 12px 12px; */
   }
   #changeForm, #changeForm2 {
     padding-bottom: 64px !important;
