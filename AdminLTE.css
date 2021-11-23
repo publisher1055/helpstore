@@ -6037,7 +6037,7 @@ label.itemTitle:last-child,
 .form-group .periodBox {
   width:194px;
   color:#1F2937;
-  background:url('https://publisher1055.github.io/helpstore/img/icon-calendar.png') no-repeat 95% center / 15px 15px;
+  background:url('https://mullymediabucket.s3.ap-northeast-2.amazonaws.com/helpstore/icon-calendar.png') no-repeat 95% center / 15px 15px;
 }
 .form-group  .periodlayer button.active {
   border-color:#2563EB;
@@ -6311,7 +6311,7 @@ label.itemTitle:last-child,
 ==================================================================================*/
 .main-header .logo {
   padding:0;
-  background:url('https://publisher1055.github.io/helpstore/img/logo2.png') no-repeat 7px 12px !important;
+  background:url('https://mullymediabucket.s3.ap-northeast-2.amazonaws.com/helpstore/logo2.png') no-repeat 7px 12px !important;
 }
 .main-header .logo .logo-lg {
   overflow:hidden;
@@ -6346,11 +6346,11 @@ label.itemTitle:last-child,
 .navbar-nav > .user-menu .dropdown-toggle {
   height:50px;
   padding:14px 10px 14px 40px !important;
-  background:url('https://publisher1055.github.io/helpstore/img/icon-no-profile.png') no-repeat 10px center / 21px;
+  background:url('https://mullymediabucket.s3.ap-northeast-2.amazonaws.com/helpstore/icon-no-profile.png') no-repeat 10px center / 21px;
 }
 .navbar-nav > .user-menu .dropdown-toggle:hover,
 .navbar-nav > .user-menu.open .dropdown-toggle {
-  background:rgba(0,0,0,0.1) url('https://publisher1055.github.io/helpstore/img/icon-no-profile.png') no-repeat 10px center / 21px !important;
+  background:rgba(0,0,0,0.1) url('https://mullymediabucket.s3.ap-northeast-2.amazonaws.com/helpstore/icon-no-profile.png') no-repeat 10px center / 21px !important;
 }
 .navbar-nav > .user-menu .user-image {
   display:none;
@@ -6358,10 +6358,10 @@ label.itemTitle:last-child,
 .navbar-nav>li>a[data-toggle='control-sidebar'] {
   height:50px;
   padding:15px 25px 15px !important;
-  background:url('https://publisher1055.github.io/helpstore/img/icon-setting.png') no-repeat center / 20px;
+  background:url('https://mullymediabucket.s3.ap-northeast-2.amazonaws.com/helpstore/icon-setting.png') no-repeat center / 20px;
 }
 .navbar-nav>li>a[data-toggle='control-sidebar']:hover {
-  background:rgba(0,0,0,0.1) url('https://publisher1055.github.io/helpstore/img/icon-setting.png') no-repeat center / 20px !important;
+  background:rgba(0,0,0,0.1) url('https://mullymediabucket.s3.ap-northeast-2.amazonaws.com/helpstore/icon-setting.png') no-repeat center / 20px !important;
 }
 .navbar-nav>li>a[data-toggle='control-sidebar'] i {
   display:none;
@@ -6513,12 +6513,12 @@ label.itemTitle:last-child,
 a.pull-right.btn-cacao:before {
   width:20px;
   height:19px;
-  background:url('https://publisher1055.github.io/helpstore/img/icon-kakao02.png') no-repeat left top;
+  background:url('https://mullymediabucket.s3.ap-northeast-2.amazonaws.com/helpstore/icon-kakao02.png') no-repeat left top;
 }
 a.pull-right.btn-cacao + .btn-cacao:before {
   width:20px;
   height:19px;
-  background:url('https://publisher1055.github.io/helpstore/img/icon-kakao01.png') no-repeat left top;
+  background:url('https://mullymediabucket.s3.ap-northeast-2.amazonaws.com/helpstore/icon-kakao01.png') no-repeat left top;
 }
 .col-md-8 .box-widget .box-header .user-block .description {
   width:290px;
@@ -6876,7 +6876,7 @@ footer.main-footer .pull-right a {
 .login-logo a, .register-logo a {
   display:block;
   padding-top:40px;
-  background:url('https://publisher1055.github.io/helpstore/img/member-logo.png') no-repeat center top;
+  background:url('https://mullymediabucket.s3.ap-northeast-2.amazonaws.com/helpstore/member-logo.png') no-repeat center top;
 }
 .login-logo a b, .register-logo a b {
   font-size:32px;
@@ -7567,7 +7567,7 @@ footer.main-footer .pull-right a {
 
 #startDate.form-control,
 #endDate.form-control {
-  background:url('https://publisher1055.github.io/helpstore/img/icon-calendar.png') no-repeat 95% center / 15px 15px;
+  background:url('https://mullymediabucket.s3.ap-northeast-2.amazonaws.com/helpstore/icon-calendar.png') no-repeat 95% center / 15px 15px;
 }
 
 /* 키워드도구 - 카테고리 */
@@ -7700,22 +7700,22 @@ footer.main-footer .pull-right a {
 }
 
 .small-box .icon .fa-tv {
-  background:url('https://publisher1055.github.io/helpstore/img/keyword-icon1.png') no-repeat 0 0 / 100%;
+  background:url('https://mullymediabucket.s3.ap-northeast-2.amazonaws.com/helpstore/keyword-icon1.png') no-repeat 0 0 / 100%;
 }
 .small-box .icon .ion-stats-bars {
-  background:url('https://publisher1055.github.io/helpstore/img/keyword-icon2.png') no-repeat 0 0 / 100%;
+  background:url('https://mullymediabucket.s3.ap-northeast-2.amazonaws.com/helpstore/keyword-icon2.png') no-repeat 0 0 / 100%;
 }
 .small-box .icon .ion-person-add {
-  background:url('https://publisher1055.github.io/helpstore/img/keyword-icon3.png') no-repeat 0 0 / 100%;
+  background:url('https://mullymediabucket.s3.ap-northeast-2.amazonaws.com/helpstore/keyword-icon3.png') no-repeat 0 0 / 100%;
 }
 .small-box .icon .ion-pie-graph {
-  background:url('https://publisher1055.github.io/helpstore/img/keyword-icon4.png') no-repeat 0 0 / 100%;
+  background:url('https://mullymediabucket.s3.ap-northeast-2.amazonaws.com/helpstore/keyword-icon4.png') no-repeat 0 0 / 100%;
 }
 .small-box .icon .fa-shopping-cart {
-  background:url('https://publisher1055.github.io/helpstore/img/keyword-icon5.png') no-repeat 0 0 / 100%;
+  background:url('https://mullymediabucket.s3.ap-northeast-2.amazonaws.com/helpstore/keyword-icon5.png') no-repeat 0 0 / 100%;
 }
 .small-box .icon .fa-arrow-circle-right {
-  background:url('https://publisher1055.github.io/helpstore/img/keyword-icon6.png') no-repeat 0 0 / 100%;
+  background:url('https://mullymediabucket.s3.ap-northeast-2.amazonaws.com/helpstore/keyword-icon6.png') no-repeat 0 0 / 100%;
 }
 
 #countBox .col-lg-3:nth-of-type(1) .small-box .icon {top:30px;}
@@ -8766,6 +8766,15 @@ tr[style='cursor:pointer;'] > td[onclick] > a[href] img {
     padding-bottom:16px;
   }
 
+
+  /* ================================================================================
+    헤더
+  ==================================================================================*/
+  .navbar-nav > .user-menu > .dropdown-menu > .user-footer .btn-default:hover {
+    background-color:#2563EB;
+  }
+
+
   /* ================================================================================
     01. 메인 991px
   ==================================================================================*/
@@ -8818,7 +8827,7 @@ tr[style='cursor:pointer;'] > td[onclick] > a[href] img {
     03 로그인
   ==================================================================================*/
   .login-logo a, .register-logo a {
-    background:url('https://publisher1055.github.io/helpstore/img/member-logo-m.png') no-repeat center top / 161px 36px;
+    background:url('https://mullymediabucket.s3.ap-northeast-2.amazonaws.com/helpstore/member-logo-m.png') no-repeat center top / 161px 36px;
   }
 
   /* ================================================================================
@@ -8897,9 +8906,10 @@ tr[style='cursor:pointer;'] > td[onclick] > a[href] img {
     헤더 768px
   ==================================================================================*/
   .main-header .logo {
-    background:url('https://publisher1055.github.io/helpstore/img/logo2-m.png') no-repeat 7px 6px / 161px 36px !important;
+    background:url('https://mullymediabucket.s3.ap-northeast-2.amazonaws.com/helpstore/logo2-m.png') no-repeat 7px 6px / 161px 36px !important;
   }
-  .navbar-nav > .user-menu .dropdown-toggle {
+  .navbar-nav > .user-menu .dropdown-toggle,
+  .navbar-nav > .user-menu .dropdown-toggle:hover {
     padding:15px 25px !important;
     background-position: center !important;
   }
@@ -8927,10 +8937,10 @@ tr[style='cursor:pointer;'] > td[onclick] > a[href] img {
   }
 
   a.pull-right.btn-cacao:before {
-    background:url('https://publisher1055.github.io/helpstore/img/icon-kakao02-m.png') no-repeat left top / 20px 19px;
+    background:url('https://mullymediabucket.s3.ap-northeast-2.amazonaws.com/helpstore/icon-kakao02-m.png') no-repeat left top / 20px 19px;
   }
   a.pull-right.btn-cacao + .btn-cacao:before {
-    background:url('https://publisher1055.github.io/helpstore/img/icon-kakao01-m.png') no-repeat left top / 20px 19px;
+    background:url('https://mullymediabucket.s3.ap-northeast-2.amazonaws.com/helpstore/icon-kakao01-m.png') no-repeat left top / 20px 19px;
   }
 
 
